@@ -18,17 +18,9 @@ for(let i=0; i<str.length; i++){
     }
 }*/
 
-let frase = prompt("ingrese una frase");
-
-
-console.log(frase);
-console.log(frase.length);
-console.log(frase.charAt(1));
-
-//tpUppercase , toLowercase
-
-for(let posicion = 0; posicion  < frase.length; posicion++ ){
-    if(frase.charAt(posicion) =="a" || frase.charAt(posicion) =="e" || frase.charAt(posicion) =="i" || frase.charAt(posicion) =="o" || frase.charAt(posicion) =="u"){
-        document.write(frase.charAt(posicion))
-    }
-}
+let frase = prompt("Escribe una frase");
+let nfrase = frase.length;
+for (let i = 0 ; i < frase.length ; i++){
+    if(frase.substr(i,1) === "a" || frase.substr(i,1) === "e" || frase.substr(i,1) === "i" || frase.substr(i,1) === "o" || frase.substr(i,1) === "u")
+document.write( frase.substr(i, (1)) );
+ }
